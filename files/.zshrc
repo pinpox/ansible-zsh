@@ -42,7 +42,7 @@ PURE_PROMPT_SYMBOL='✱'
 
 # Colors
 # wget https://raw.github.com/trapd00r/LS_COLORS/master/LS_COLORS -O $HOME/.dircolors
-eval $(dircolors -b $HOME/.dircolors)
+eval $(dircolors -b $HOME/.config/zsh/dircolors)
 
 [[ $TERM == "dumb" ]] && unsetopt zle && PS1='$ ' && return
 

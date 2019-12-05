@@ -19,6 +19,7 @@
     - .zshrc
     - functions.zsh
     - aliases.zsh
+    - dircolors
   register: zshconfig
 
 - name: Run antibody local install script
