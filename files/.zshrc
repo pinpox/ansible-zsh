@@ -15,7 +15,7 @@ bindkey "$terminfo[kcud1]" down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
 
-export SUDO_ASKPASS="/home/binaryplease/.local/bin/passsudo"
+# export SUDO_ASKPASS="/home/binaryplease/.local/bin/passsudo"
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
 
