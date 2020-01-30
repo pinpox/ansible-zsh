@@ -28,6 +28,5 @@
     creates: "{{ansible_env.HOME}}/.local/bin/antibody"
 
 - name: Install zsh plugins
-  command: "{{ansible_env.HOME}}/.local/bin/antibody bundle < {{ansible_env.HOME}}/.config/zsh/zsh_plugins > {{ansible_env.HOME}}/.zsh_plugins.sh"
+  script: "{{ansible_env.HOME}}/.local/bin/antibody bundle < {{ansible_env.HOME}}/.config/zsh/zsh_plugins > {{ansible_env.HOME}}/.zsh_plugins.sh"
   when: zshconfig.changed
-
