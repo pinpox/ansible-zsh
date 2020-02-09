@@ -6,7 +6,7 @@ alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias ls='ls --color=tty  --sort=extension --group-directories-first'
 alias pupdate='sudo pacman -Syu'
 alias qr_gen="qrencode -t ansi -o-"
-alias sudo="sudo --askpass"
+# alias sudo="sudo --askpass"
 alias top='htop'
 alias vim="nvim"
 alias weather='curl -4 http://wttr.in/Koeln'
