@@ -5,9 +5,9 @@
     path: "{{ansible_env.HOME}}/.config/zsh"
     state: directory
 
-- name: Copy .zshenv to set ZDOTDIR
-  copy:
-    src: zshenv
+- name: "Template zshenv to {{ansible_env.HOME}}/.zshenv"
+  template:
+    src: "zshenv.j2"
     dest: "{{ansible_env.HOME}}/.zshenv"
 
 - name: Copy zsh configuration files
