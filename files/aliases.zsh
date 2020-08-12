@@ -15,8 +15,6 @@ alias weather='curl -4 http://wttr.in/Koeln'
 abbrev-alias --init
 
 # "Regular" aliases, get only expanded at the beginning of line
-abbrev-alias c="config"
-abbrev-alias e="emacsclient -nc"
 abbrev-alias m="neomutt"
 abbrev-alias o="xdg-open"
 abbrev-alias q="exit"
@@ -27,3 +25,18 @@ abbrev-alias y="yay"
 # Global aliases, get expaned everywhere
 abbrev-alias -g G="| grep -i"
 abbrev-alias -g P="| ix"
+
+
+
+if command -v exa &> /dev/null 
+then
+
+alias ls='exa --group-directories-first'                                                          # ls
+alias l='exa -lbF --git --group-directories-first'                                                # list, size, type, git
+alias ll='exa -lbGF --git --group-directories-first'                                             # long list
+alias llm='exa -lbGd --git --sort=modified --group-directories-first'                            # long list, modified date sort
+alias la='exa -lbhHigmuSa --time-style=long-iso --git --color-scale --group-directories-first'  # all list
+alias lx='exa -lbhHigmuSa@ --time-style=long-iso --git --color-scale --group-directories-first' # all + extended list
+alias lt='exa --tree --level=2 --group-directories-first'                                         # tree
+
+fi
